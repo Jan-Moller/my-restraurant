@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mao Thai</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
 
 </head>
 
 <body>
     <header>
-        <img src="./assets/img/aot.jpg" alt="Bild eines Thai-Gerichts">
+        <img class="atf_img" src="./assets/img/aot.jpg" alt="Bild eines Thai-Gerichts">
         <h1>Willkommen im Mao Thai Restaurant</h1>
         <p>Hier findest du einen Überblick über unsere Speisen</p>
         <h2>Unsere Öffnungszeiten</h2>
@@ -41,9 +42,56 @@
         <section>
             <h2>Wo findest du uns?</h2>
             <address>Schleißheimer Straße 92, 80797 München</address>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.667798389423!2d11.5618303!3d48.155209400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e75e0b46975d1%3A0xe199f209a3a77f04!2sMao!5e0!3m2!1sen!2sde!4v1754947079253!5m2!1sen!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.667798389423!2d11.5618303!3d48.155209400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e75e0b46975d1%3A0xe199f209a3a77f04!2sMao!5e0!3m2!1sen!2sde!4v1754947079253!5m2!1sen!2sde"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section>
+            <h2>Speisekarte</h2>
+            <table>
+                <tr>
+                    <th>Nummer</th>
+                    <th>Gericht</th>
+                    <th>Preis</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Pad Thai</td>
+                    <td>9,90 €</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Tom Yum Suppe</td>
+                    <td>7,50 €</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Massaman Curry</td>
+                    <td>10,50 €</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Frühlingsrollen</td>
+                    <td>5,50 €</td>
+                </tr>
+            </table>
+            <p>Jetzt <a href="./assets/downloads/menu.pdf" target="_blank">Speisekarte</a> herunterladen!</p>
+        </section>
+        <section>
+            <h2>Kontakt</h2>
+            <p>Du erreichst uns unter: <br>
+            Telefon: <a href="tel:01234567890">01234 567890</a> <br>
+            E-Mail: <a href="mailto:info@maothai.de">info@maothai.de</a></p>
+            <p>Reservierungen sind telefonisch oder per E-Mail möglich.</p>
         </section>
     </main>
+    <footer>
+        <a href="impressum.html">Impressum</a> |
+        <a href="agb.html">AGB</a> |
+        <a href="datenschutz.html">Datenschutz</a>
+        <p>&copy; 2023 Mao Thai Restaurant</p>
+    </footer>
 </body>
 
 </html>
