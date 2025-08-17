@@ -1,6 +1,41 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
-    font-family: 'Noto Serif Thai'
+    font-family: 'Noto Serif Thai';
+}
+
+header {
+    height: 45vh;
+}
+
+header nav {
+    position: absolute;
+    right: 88px;
+    top: 24px;
+    z-index: 2;
+    color: white;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    filter: drop-shadow(0 0 2px rgba(235, 224, 65, 0.6));
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: #ebe041;
+}
+
+h2 {
+    margin-block-start: 0;
+    text-decoration: underline;
 }
 
 .atf_img {
@@ -16,16 +51,128 @@ body {
     left: 0;
     right: 0;
     color: white;
-    text-align: center;
-    height: calc(45vh - 40px);
-    padding: 40px 0 0 0;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .header_headline h1 {
-    font-size: 36px;
+    font-size: 54px;
+    color: #ebe041;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+
+
 }
 
 .header_headline p {
     font-size: 24px;
+}
+
+main {
+    color: #cccccc;
+    background-color: #0f1a17;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    align-items: center;
+
+
+}
+
+section::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    border-bottom: 3px solid;
+}
+
+.contact_section::after {
+    border: none;
+}
+
+td,
+th {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+
+}
+
+.pd100 {
+    padding: 0 100px 20px 100px;
+}
+
+.googlemaps {
+    width: 90%;
+    height: 450px;
+    filter: brightness(90%);
+    border-radius: 50px;
+}
+
+footer {
+    background-color: #0a0f0e;
+    color: white;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    margin: 0 40px 0 40px;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #ebe041;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+}
+
+address {
+    padding-bottom: 20px;
+}
+
+#order_btn {
+    color: black;
+    background-color: #ebe041;
+    padding: 16px;
+    filter: drop-shadow(0 0 2px rgba(235, 224, 65, 0.6));
+    cursor: pointer;
+    
+}
+
+#order_btn:hover {
+    background-color: #d4c63c;
+    text-decoration: none;
+}
+
+.contact_element {
+    color: #ebe041;
+    text-decoration: underline;
+}
+
+.contact_element:hover {
+    color:#d4c63c;
 }
